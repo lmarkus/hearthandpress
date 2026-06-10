@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Request a Quote — Hearth &amp; Press Co.</title>
+  <meta name="description" content="Request a quote from Hearth & Press Co., commercial print specialists for the baking industry. Tell us your product, stock, finish and quantity and we'll be in touch." />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="canonical" href="https://heartandpress.com/contact.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Hearth & Press Co." />
+  <meta property="og:title" content="Request a Quote — Hearth & Press Co." />
+  <meta property="og:description" content="Tell us your product, stock, finish and quantity and our team will follow up with a quote and a press-ready proof. Trade and wholesale welcome." />
+  <meta property="og:url" content="https://heartandpress.com/contact.html" />
+  <meta property="og:image" content="https://heartandpress.com/images/hero-bakery.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <script type="application/ld+json">
+  { "@context": "https://schema.org", "@type": "Organization", "name": "Hearth & Press Co.", "url": "https://heartandpress.com/", "logo": "https://heartandpress.com/assets/logo-mark.svg", "email": "info@heartandpress.com", "telephone": "+1-512-221-4428", "slogan": "Commercial print, built for bakers." }
+  </script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="index.html" aria-label="Hearth &amp; Press Co. home">
+          <img class="brand__mark" src="assets/logo-mark.svg" alt="" width="38" height="38" />
+          <span class="brand__name">Hearth &amp; Press Co.<small>Print for bakers</small></span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__links" id="primary-menu">
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+          <li class="nav__cta"><a class="btn btn--accent" href="contact.html">Request a Quote</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== Page header ===== -->
+  <section class="page-head">
+    <div class="container">
+      <span class="eyebrow">Request a quote</span>
+      <h1>Let’s talk about your print run.</h1>
+      <p class="lead measure">
+        Tell us what you need — product, stock, finish and quantity — and our team
+        will follow up with a quote and, where helpful, a press-ready proof. The
+        more detail you share, the faster we can spec it accurately.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== Form + sidebar ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="split">
+
+        <!-- Form column -->
+        <div>
+          <!-- Success message (shown by JS after submit) -->
+          <div id="form-success" class="form-success" tabindex="-1" aria-live="polite">
+            <h3 style="margin-top:0">Request sent — thank you!</h3>
+            <p style="margin-bottom:0">
+              We’ve received your quote request and we’ll be in touch with you
+              shortly. For anything urgent, reach us at
+              <a href="mailto:info@heartandpress.com">info@heartandpress.com</a>.
+            </p>
+          </div>
+
+          <form id="quote-form" novalidate>
+            <div class="form-grid">
+              <div class="field">
+                <label for="name">Your name <span class="req" aria-hidden="true">*</span></label>
+                <input type="text" id="name" name="name" autocomplete="name" required />
+              </div>
+              <div class="field">
+                <label for="business">Business name</label>
+                <input type="text" id="business" name="business" autocomplete="organization" placeholder="Your bakery or café" />
+              </div>
+              <div class="field">
+                <label for="email">Email <span class="req" aria-hidden="true">*</span></label>
+                <input type="email" id="email" name="email" autocomplete="email" required />
+              </div>
+              <div class="field">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" autocomplete="tel" />
+              </div>
+              <div class="field">
+                <label for="category">Product category <span class="req" aria-hidden="true">*</span></label>
+                <select id="category" name="category" required>
+                  <option value="" selected disabled>Select a product…</option>
+                  <option>Business Cards</option>
+                  <option>Flyers &amp; Brochures</option>
+                  <option>Packaging (boxes, cartons, sleeves)</option>
+                  <option>Labels &amp; Stickers</option>
+                  <option>Menus &amp; Tent Cards</option>
+                  <option>Signage &amp; Banners</option>
+                  <option>Multiple / Not sure yet</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="quantity">Estimated quantity</label>
+                <input type="text" id="quantity" name="quantity" placeholder="e.g. 1,000 boxes" />
+              </div>
+              <div class="field full">
+                <label for="specs">Project details &amp; specs</label>
+                <textarea id="specs" name="specs" placeholder="Sizes, stock (e.g. 16pt C2S), finish (matte / soft-touch / foil), coatings, due date, and any food-contact requirements…"></textarea>
+              </div>
+              <div class="field full">
+                <label for="artwork">Artwork status</label>
+                <select id="artwork" name="artwork">
+                  <option value="" selected disabled>Where are you with files?</option>
+                  <option>Print-ready files (PDF/X with bleed)</option>
+                  <option>Have artwork, may need prepress</option>
+                  <option>Need design / layout help</option>
+                  <option>Starting from scratch</option>
+                </select>
+              </div>
+            </div>
+
+            <div style="margin-top:1.5rem; display:flex; align-items:center; gap:1rem; flex-wrap:wrap">
+              <button type="submit" class="btn btn--primary">Send Request</button>
+              <span class="form-note">* Required. We’ll never share your details. No pricing is shown online — we quote each job to spec.</span>
+            </div>
+          </form>
+        </div>
+
+        <!-- Sidebar column -->
+        <aside class="stack">
+          <div class="spec">
+            <h4>Talk to us</h4>
+            <p style="margin:0 0 0.5rem;font-size:0.95rem;color:var(--ink-soft)">
+              <a href="mailto:info@heartandpress.com">info@heartandpress.com</a><br />
+              <a href="tel:+15122214428">(512) 221-4428</a>
+            </p>
+            <p style="margin:0;font-size:0.95rem;color:var(--ink-soft)">Mon–Fri, 8am–6pm</p>
+          </div>
+          <div class="spec">
+            <h4>Trade &amp; wholesale</h4>
+            <p style="margin:0;font-size:0.95rem;color:var(--ink-soft)">
+              We work with bakeries, cafés, commissaries and wholesale baking
+              operations of every size. Reorders and multi-location fulfillment welcome.
+            </p>
+          </div>
+          <div class="spec">
+            <h4>What to include</h4>
+            <ul style="margin:0;padding-left:1.1em;font-size:0.95rem;color:var(--ink-soft)">
+              <li>Product &amp; quantity</li>
+              <li>Flat &amp; finished size</li>
+              <li>Stock &amp; finish preference</li>
+              <li>Any food-contact needs</li>
+              <li>In-hand date</li>
+            </ul>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html" aria-label="Hearth &amp; Press Co. home">
+            <img class="brand__mark" src="assets/logo-mark.svg" alt="" width="38" height="38" />
+            <span class="brand__name" style="color:#fff">Hearth &amp; Press Co.</span>
+          </a>
+          <p style="margin-top:1rem;max-width:34ch;color:rgba(251,246,238,0.75);font-size:0.9rem">
+            Commercial print, built for bakers. Trade &amp; wholesale partners welcome.
+          </p>
+        </div>
+        <div>
+          <h4>Products</h4>
+          <ul class="footer-links">
+            <li><a href="products/business-cards.html">Business Cards</a></li>
+            <li><a href="products/flyers-brochures.html">Flyers &amp; Brochures</a></li>
+            <li><a href="products/packaging.html">Packaging</a></li>
+            <li><a href="products/labels-stickers.html">Labels &amp; Stickers</a></li>
+            <li><a href="products/menus-tent-cards.html">Menus &amp; Tent Cards</a></li>
+            <li><a href="products/signage-banners.html">Signage &amp; Banners</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="products.html">All Products</a></li>
+            <li><a href="contact.html">Request a Quote</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul class="footer-links">
+            <li><a href="mailto:info@heartandpress.com">info@heartandpress.com</a></li>
+            <li><a href="tel:+15122214428">(512) 221-4428</a></li>
+            <li>Mon–Fri, 8am–6pm</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span id="year">2026</span> Hearth &amp; Press Co. All rights reserved.</span>
+        <span>Prepress &middot; Offset &amp; Digital &middot; Finishing &middot; Fulfillment</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
