@@ -1,4 +1,4 @@
-# Heart & Press Co. — Website
+# Heart&Press Co. — Website
 
 Static marketing website for **Heart & Press Co.**, a commercial printer
 specializing in the **baking industry** (bakeries, patisseries, cafés and
