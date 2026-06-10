@@ -1,6 +1,6 @@
-# Hearth & Press Co. — Website
+# Heart & Press Co. — Website
 
-Static marketing website for **Hearth & Press Co.**, a commercial printer
+Static marketing website for **Heart & Press Co.**, a commercial printer
 specializing in the **baking industry** (bakeries, patisseries, cafés and
 wholesale baking operations). Built to support a **4over.com wholesale trade
 account** application.
@@ -62,8 +62,8 @@ Before going live, update the canonical/Open Graph/sitemap base URL
 ## Notes
 
 - **Contact details are real and used site-wide:** phone (512) 221-4428,
-  email info@heartandpress.com, domain heartandpress.com (spelled "heart",
-  intentionally — the brand name is "Hearth & Press Co.").
+  email info@heartandpress.com, domain heartandpress.com. Brand name and
+  domain both use "Heart" (e.g. "Heart & Press Co.").
 - The quote form (`contact.html`) is **front-end only**: it validates, hides
   the form and shows an inline confirmation. There is no backend; wire
   `initQuoteForm` in `js/main.js` to an endpoint or form service to collect

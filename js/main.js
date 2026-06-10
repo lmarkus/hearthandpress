@@ -1,5 +1,5 @@
 /* =================================================================
-   Hearth & Press Co. — site JS
+   Heart & Press Co. — site JS
    Progressive enhancement only; site works without it.
    ================================================================= */
 (function () {
